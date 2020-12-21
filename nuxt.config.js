@@ -9,13 +9,16 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    titleTemplate: '%s - xcelscanner',
-    title: 'xcelscanner',
+    titleTemplate: '%s - Designed by xceldeveloper',
+    title: 'Scan Qrcode, Barcode with your camera, convert Image to PDF',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1,user-scalable=no' },
       { hid: 'description', name: 'description', content: '' }
     ],
+    noscript: [{
+      innerHTML: 'This Web application requires JavaScript Please Turn it on From Browser Settings.'
+    }],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
@@ -36,7 +39,26 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+    '@nuxtjs/pwa', //for app version only
   ],
+  pwa: {
+    manifest: {
+      name: 'XcelScanner',
+      short_name: 'Xcelscanner',
+      description:'Scan Qrcode, Barcode with your camera, convert Image to PDF',
+      lang: 'en',
+      display: 'standalone',
+      orientation:'natural',
+      theme_color: '#000000',
+      background_color: '#ffffff',
+      start_url: '/',
+      mobileAppIOS: true
+    },
+    workbox: {
+      // /* workbox options */
+      cleanupOutdatedCaches:true
+    }
+  },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
