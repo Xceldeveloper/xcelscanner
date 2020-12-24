@@ -26,6 +26,7 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
+    '~/assets/materialdesignicons.min.css'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
@@ -66,6 +67,7 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    'vue-web-cam/nuxt'
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
