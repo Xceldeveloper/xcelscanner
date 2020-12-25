@@ -63,7 +63,7 @@
       <v-card dark>
         <br />
         <v-card-text>
-          Place the Qrcode Front of your device Camera to Scan automatically
+          Place the Barcode Front of your device Camera to Scan automatically
         </v-card-text>
       </v-card>
     </v-dialog>
