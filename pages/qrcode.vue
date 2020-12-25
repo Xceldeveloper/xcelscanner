@@ -10,7 +10,9 @@
       </v-btn> -->
       <v-btn icon @click="help = true"><v-icon>mdi-help</v-icon></v-btn>
     </v-toolbar>
-    <StreamBarcodeReader
+
+    <v-row align="center" justify="center" class="fill-height">
+        <StreamBarcodeReader
       v-if="streamActivated && !open"
       height="100vh"
       width="100vw"
@@ -19,13 +21,14 @@
       @loaded="onLoaded"
     >
     </StreamBarcodeReader>
+      </v-row>
 
-    <ImageBarcodeReader
+    <!-- <ImageBarcodeReader
       @decode="onDecode"
       @error="onError"
       @selectedImage="showSelectedImage"
       :canselect="open"
-    ></ImageBarcodeReader>
+    ></ImageBarcodeReader> -->
 
     <v-row
       v-if="showResult && scannedImage == ''"
@@ -71,9 +74,8 @@
 
 <script>
 import { StreamBarcodeReader } from "vue-barcode-reader";
-import { ImageBarcodeReader } from "vue-barcode-reader";
 export default {
-  components: { StreamBarcodeReader, ImageBarcodeReader },
+  components: { StreamBarcodeReader },
   data() {
     return {
       streamActivated: true,

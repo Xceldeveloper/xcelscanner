@@ -90,7 +90,7 @@
                 <v-icon size="30">mdi-qrcode</v-icon>
               </v-btn>
               <br />
-              Qrcode
+              QRcode
             </v-col>
             <v-col
               @click="open('/barcode')"
