@@ -9,7 +9,7 @@
     >
       <v-carousel-item>
         <v-sheet height="100%">
-          <v-row class="fill-height" align="center" justify="center">
+          <v-row class="fill-height ma-0" align="center" justify="center">
             <div class="display-1">XcelScanner</div>
           </v-row>
         </v-sheet>
@@ -17,7 +17,7 @@
 
       <v-carousel-item>
         <v-sheet height="100%">
-          <v-row class="fill-height" align="center" justify="center">
+          <v-row class="fill-height ma-0" align="center" justify="center">
             <v-card align="center" justify="center" elevation="0">
               <v-btn dark icon width="150" height="150">
                 <v-icon size="100">mdi-qrcode</v-icon>
@@ -32,7 +32,7 @@
 
       <v-carousel-item>
         <v-sheet height="100%">
-          <v-row class="fill-height" align="center" justify="center">
+          <v-row class="fill-height ma-0" align="center" justify="center">
             <v-card align="center" justify="center" elevation="0">
               <v-btn dark icon width="150" height="150">
                 <v-icon size="100">mdi-barcode</v-icon>
@@ -49,7 +49,7 @@
 
       <v-carousel-item>
         <v-sheet height="100%">
-          <v-row class="fill-height" align="center" justify="center">
+          <v-row class="fill-height ma-0" align="center" justify="center">
             <v-card align="center" justify="center" elevation="0">
               <v-btn dark icon width="80" height="80">
                 <v-icon size="50">mdi-image</v-icon>

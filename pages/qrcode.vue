@@ -32,7 +32,7 @@
 
     <v-row
       v-if="showResult && scannedImage == ''"
-      class="fill-height"
+      class="fill-height ma-0"
       align="center"
       justify="center"
     >
