@@ -17,6 +17,7 @@
     "tesseract.js": "^2.1.4",
     "vue-barcode-reader": "0.0.3",
     "vue-cropperjs": "^4.2.0",
+    "vue-device-detector-js": "^1.0.1",
     "vue-html2pdf": "^1.8.0",
     "vue-pdf": "^4.2.0",
     "vue-web-cam": "^1.9.0"

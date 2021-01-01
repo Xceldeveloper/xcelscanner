@@ -31,6 +31,8 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
+    { src: '@/plugins/vue-html2pdf', mode: 'client' },
+    { src: '@/plugins/device', mode: 'client' }
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)

@@ -130,6 +130,9 @@ export default {
       showMore: false,
     };
   },
+  mounted(){
+    console.log(this.$device.os_name)
+  },
   methods: {
     open(route) {
      this.$router.push(route)
